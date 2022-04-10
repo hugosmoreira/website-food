@@ -1,9 +1,23 @@
 import React from 'react'
+import logo from '../assets/profile-logo.png'
+import {Link} from 'react-router-dom'
+import '../styles/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='navbar'>
+        <div className='leftside'>
+            <img src={logo} alt='logo'/>
+        </div>
+        <div className='rightside'>
+            <Link to='/'>Home</Link>
+            <Link to='/menu'>Menu</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/about'>About</Link>
+        </div>
+    </div>
   )
+   
 }
 
 export default Navbar
