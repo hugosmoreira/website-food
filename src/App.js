@@ -10,7 +10,7 @@ function App() {
         <Navbar />
       </Router>
       
-      Hello World
+     
     </div>
   );
 }
