@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './pages/Home';
 
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <Routes>
+          <Route exact path="/" component={Home} />
+        </Routes>
       </Router>
       
      
